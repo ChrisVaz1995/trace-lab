@@ -11,7 +11,7 @@ captureUnhandledRejections: true
 const students = [];
 const app = express();
 
-app.get('api/spongebob', (req, res) => {
+app.get('/api/spongebob', (req, res) => {
     try {
         students();
     } catch (error) {
