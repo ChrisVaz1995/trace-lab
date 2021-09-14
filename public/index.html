@@ -17,10 +17,10 @@
     <section></section>
     <script>
         axios.get('/api/spongebob')
-        .then(res => {
+        .then((res) => {
             console.log(res.data)
         })
-        .catch(error => {
+        .catch((error) => {
             console.log(error)
         })
         const addForm = document.querySelector('form')
