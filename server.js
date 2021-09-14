@@ -15,7 +15,7 @@ app.use('/style', express.static('./public/styles.css'));
 
 app.get('/', (req,res)=> {
     res.sendFile(path.join(__dirname, '/public/index.html'));
-    rollbarinfo('HTML file served successfully');
+    rollbar.info('HTML file served successfully');
 })
 
 const port = process.env.PORT || 4545;
